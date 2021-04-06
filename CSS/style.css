@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
-@import "welcome-header.css";
-@import "login-form.css";
+/* Components */
+@import "components/status-bar.css";
+/* Screens */
+@import "screens/welcome-header.css";
+@import "screens/login-form.css";
 
+/* style.css파일인 여기에는 모든 screen에 적용되는 css를 적어놓을 것임 */
 body {
   font-family: "Open Sans", sans-serif;
 }
