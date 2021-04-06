@@ -29,13 +29,17 @@
         <p class="welcome-header__text2">log in with your email or phone number</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Eamil or phone number"/>
-        <input type="password" placeholder="Password" />
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Eamil or phone number"/>
+        <input name="password" type="password" placeholder="Password" />
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account Or Password</a>
     </form>
-
+<!-- form에는 중요한 두가지 속성이 있음 action과 method임-->
+<!-- action은 어떤 페이지로 data를 보낼 건지 지정할 수 있음 -->
+<!-- method는 2가지 방식인 POST와 GET 중 하나를 쓸 수 있음-->
+<!-- POST는 백엔드 서버에 정보를 전송하는 방식이므로, 우린 현재 서버가 없어서 여기선 사용 불가 -->
+<!-- GET방식은 보안에 취약함 따라서 username과 password를 GET방식으로 보내면 안됨-->
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
