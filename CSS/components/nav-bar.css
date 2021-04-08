@@ -1,0 +1,48 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(161, 157, 157, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: inherit;
+  position: relative;
+}
+/* 앞선 CSS에서도 링크에 color:inherit;을 줬었음. 우린 모든 링크에 밑줄이 있거나 blue로 설정되는 것을 원치 않으므로 reset.css파일에 단체 적용해 줄 것임 */
+
+.nav__notification {
+  background-color: #ff6229;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 650;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+/* 사각형을 원으로 만들고 싶으면 border-radius에 사각형의 width의 반값을 쓰면됨 */
+/* position: absolute; 는 겹치게 하는 것임. 단, 이걸 사용하려는 것을 감싸고 있는 container에 relative를 주지 않으면 위치를 움직일 때 body를 기준으로 움직이게 됨. 따라서 여기서 빨간 notification을 comment icon을 기준으로 움직이기 위해서는 absolute를 적용하려는 아이를 감싸고 있는 container에 position: relative; 를 줘야함. 여기서는 nav__notification에 absolute를 줄 것이므로 이를 감싸고 있는 nav__link에다가 relative를 줘야함. */
+
+.nav__more {
+  background-color: #ff6229;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+}
