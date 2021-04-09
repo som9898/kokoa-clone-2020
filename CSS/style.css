@@ -5,9 +5,11 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
 /* Screens */
 @import "screens/welcome-header.css";
 @import "screens/login-form.css";
+@import "screens/friends.css";
 
 /* style.css파일인 여기에는 모든 screen에 적용되는 css를 적어놓을 것임 */
 body {
